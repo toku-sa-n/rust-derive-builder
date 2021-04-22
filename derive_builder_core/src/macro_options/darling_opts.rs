@@ -400,7 +400,7 @@ impl Options {
             generate_error: self.build_fn.error.is_none(),
             must_derive_clone: self.requires_clone(),
             doc_comment: None,
-            deprecation_notes: Default::default(),
+            deprecation_notes: DeprecationNotes::default(),
             std: {
                 let no_std: bool = self.no_std.into();
                 !no_std
